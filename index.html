@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Next Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--custom css file cdn link-->
+    <link rel="stylesheet" href="css/style.css">
+
+  <!--  &lt;!&ndash; CSS only &ndash;&gt;
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    &lt;!&ndash; JavaScript Bundle with Popper &ndash;&gt;
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    -->
+
+</head>
+<body>
+<!--header section starts-->
+<header class="header">
+    <a href="#" class="logo" > <i class="fas fa-paper-plane"></i> Next Travel</a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here ..." id="searchBox">
+        <label for="searchBox" class="fas fa-search"></label>
+    </form>
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-moon" id="theme-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Vehicles</a>
+        <a href="#review">Vehicles</a>
+        <a href="#hotel">Hotels</a>
+        <a href="#vehicle">Vehicles</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#login">Login</a>
+        <a href="#register">Register</a>
+    </nav >
+
+    <form action="" class="login-form">
+
+        <div class="inputBox">
+            <span>Your email</span>
+            <input type="text" placeholder="kamal123@gmail.com">
+        </div>
+
+        <div class="inputBox">
+            <span>Password</span>
+            <input type="password" placeholder="*********">
+        </div>
+
+        <div class="remember">
+            <input type="checkbox" name="" id="login-remember">
+            <label for="login-remember">Remember me</label>
+        </div>
+        <input type="submit" class="btn" value="login">
+    </form>
+</header>
+<!--header section ends-->
+
+<!--home section start-->
+<section class="home" id="home">
+    <div class="image">
+        <img src="assets/homee.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>Adventure is worthwhile</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci culpa ducimus harum illum inventore,
+            ipsa iusto sequi sunt veniam voluptatem. Atque eligendi eum facilis fugit necessitatibus nihil placeat
+            praesentium quod!
+        </p>
+        <a href="#" class="btn">Explore now</a>
+    </div>
+</section>
+<!--home section end-->
+
+<!--filter form section start-->
+<section class="form-container">
+    <form action="">
+        <div class="inputBox">
+            <span>where to</span>
+            <input type="text" placeholder="search places">
+        </div>
+        <div class="inputBox">
+            <span>arrivals</span>
+            <input type="date" >
+        </div>
+        <div class="inputBox">
+            <span>leaving</span>
+            <input type="date">
+        </div>
+        <input type="submit" value="Book Now" class="btn">
+    </form>
+</section>
+<!--filter form section end-->
+
+<!--packages section start-->
+<section class="packages" id="packages">
+    <h1 class="heading"> Our <span>Packages</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/kandy.jpg" alt="">
+                <h3><i class="fas fa-map-marker-alt"></i>Kandy and UpCountry</h3>
+            </div>
+            <div class="content">
+                <div class="price">LKR 5000/= <span>LKR 7000/=</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae cumque deserunt eaque
+                    explicabo iure nobis omnis pariatur quod, tempore.</p>
+                <a href="#" class="btn"> Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/westCoast.jpg" alt="">
+                <h3><i class="fas fa-map-marker-alt"></i>Western Coast</h3>
+            </div>
+            <div class="content">
+                <div class="price">LKR 3000/= <span> LKR 6000/=</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae cumque deserunt eaque
+                    explicabo iure nobis omnis pariatur quod, tempore.</p>
+                <a href="#" class="btn"> Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/easternCoast.jpg" alt="">
+                <h3><i class="fas fa-map-marker-alt"></i>Eastern Coast</h3>
+            </div>
+            <div class="content">
+                <div class="price">LKR 3500/= <span> LKR 5500/=</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae cumque deserunt eaque
+                    explicabo iure nobis omnis pariatur quod, tempore.</p>
+                <a href="#" class="btn"> Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/anuradhapuraPolonnaru.jpg" alt="">
+                <h3><i class="fas fa-map-marker-alt"></i>Anuradhapura and Polonnaruwa</h3>
+            </div>
+            <div class="content">
+                <div class="price">LKR 7000/= <span> LKR 13000/=</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae cumque deserunt eaque
+                    explicabo iure nobis omnis pariatur quod, tempore.</p>
+                <a href="#" class="btn"> Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/northPeninsula.jpg" alt="">
+                <h3><i class="fas fa-map-marker-alt"></i>North Peninsula</h3>
+            </div>
+            <div class="content">
+                <div class="price">LKR 5000/= <span> LKR 8000/=</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae cumque deserunt eaque
+                    explicabo iure nobis omnis pariatur quod, tempore.</p>
+                <a href="#" class="btn"> Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/colombo.jpg" alt="">
+                <h3><i class="fas fa-map-marker-alt"></i>Capital Colombo</h3>
+            </div>
+            <div class="content">
+                <div class="price">LKR 5000/= <span> LKR 10000/=</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae cumque deserunt eaque
+                    explicabo iure nobis omnis pariatur quod, tempore.</p>
+                <a href="#" class="btn"> Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/sigiriyaDambulla.jpg" alt="">
+                <h3><i class="fas fa-map-marker-alt"></i>Sigiriya and Dambulla</h3>
+            </div>
+            <div class="content">
+                <div class="price">LKR 5000/= <span> LKR 10000/=</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae cumque deserunt eaque
+                    explicabo iure nobis omnis pariatur quod, tempore.</p>
+                <a href="#" class="btn"> Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/downSouth.jpg" alt="">
+                <h3><i class="fas fa-map-marker-alt"></i>Down South</h3>
+            </div>
+            <div class="content">
+                <div class="price">LKR 3000/= <span> LKR 6000/=</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae cumque deserunt eaque
+                    explicabo iure nobis omnis pariatur quod, tempore.</p>
+                <a href="#" class="btn"> Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/matale.jpg" alt="">
+                <h3><i class="fas fa-map-marker-alt"></i>Matale</h3>
+            </div>
+            <div class="content">
+                <div class="price">LKR 4000/= <span> LKR 7000/=</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae cumque deserunt eaque
+                    explicabo iure nobis omnis pariatur quod, tempore.</p>
+                <a href="#" class="btn"> Book Now</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--packages section end-->
+
+<!--services section start-->
+<section  class="services" id="services">
+    <h1 class="heading" > Our <span>Services</span></h1>
+
+    <div class="box box-container">
+
+        <div class="box">
+            <span>01</span>
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable Hotels</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magnam maxime minima molestiae tempore!
+                Animi debitis earum excepturi magni sint?</p>
+        </div>
+
+        <div class="box">
+            <span>02</span>
+            <i class="fas fa-car"></i>
+            <h3>Fastest Travel</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magnam maxime minima molestiae tempore!
+                Animi debitis earum excepturi magni sint?</p>
+        </div>
+
+        <div class="box">
+            <span>03</span>
+            <i class="fas fa-utensils"></i>
+            <h3>Food and Beverages</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magnam maxime minima molestiae tempore!
+                Animi debitis earum excepturi magni sint?</p>
+        </div>
+
+        <div class="box">
+            <span>04</span>
+            <i class="fas fa-globe"></i>
+            <h3>Around The Sri Lanka</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magnam maxime minima molestiae tempore!
+                Animi debitis earum excepturi magni sint?</p>
+        </div>
+
+        <div class="box">
+            <span>05</span>
+            <i class="fas fa-hiking"></i>
+            <h3>New Adventures</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magnam maxime minima molestiae tempore!
+                Animi debitis earum excepturi magni sint?</p>
+        </div>
+
+        <div class="box">
+            <span>06</span>
+            <i class="fas fa-bullhorn"></i>
+            <h3>Safety Guide</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magnam maxime minima molestiae tempore!
+                Animi debitis earum excepturi magni sint?</p>
+        </div>
+
+    </div>
+
+</section>
+<!--services section end-->
+
+<!--pricing section start-->
+<section class="pricing" id="pricing">
+
+    <h1 class="heading">Package <span> Pricing </span></h1>
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Regular</h3>
+            <div class="price">
+                <span>LKR</span>
+                <span class="amount">7000</span>
+                <span>/mo</span>
+            </div>
+            <ul>
+                <li>7days</li>
+                <li>Foods and Beverages</li>
+                <li>Safety Guide</li>
+                <li>Insuarance</li>
+                <li>Economy Vehicles</li>
+                <li>Economy Hotels</li>
+            </ul>
+            <a href="#" class="btn"> Select Plan</a>
+        </div>
+
+        <div class="box">
+            <h3>Mid-Level</h3>
+            <div class="price">
+                <span>LKR</span>
+                <span class="amount">15000</span>
+                <span>/mo</span>
+            </div>
+            <ul>
+                <li>20 days</li>
+                <li>Foods and Beverages</li>
+                <li>Safety Guide</li>
+                <li>Insuarance</li>
+                <li>Mid-Level Vehicles</li>
+                <li>Mid-Level Hotels</li>
+            </ul>
+            <a href="#" class="btn"> Select Plan</a>
+        </div>
+
+        <div class="box">
+            <h3>Luxury</h3>
+            <div class="price">
+                <span>LKR</span>
+                <span class="amount">20000</span>
+                <span>/mo</span>
+            </div>
+            <ul>
+                <li>30days</li>
+                <li>Foods and Beverages</li>
+                <li>Safety Guide</li>
+                <li>Insuarance</li>
+                <li>Luxury Vehicles</li>
+                <li>Luxury Hotels</li>
+            </ul>
+            <a href="#" class="btn"> Select Plan</a>
+        </div>
+
+        <div class="box">
+            <h3>Super Luxury</h3>
+            <div class="price">
+                <span>LKR</span>
+                <span class="amount">35000</span>
+                <span>/mo</span>
+            </div>
+            <ul>
+                <li>30days</li>
+                <li>Foods and Beverages</li>
+                <li>Safety Guide</li>
+                <li>Insuarance</li>
+                <li>Super Luxury Vehicles</li>
+                <li>Super Luxury Hotels</li>
+            </ul>
+            <a href="#" class="btn"> Select Plan</a>
+        </div>
+
+    </div>
+
+
+</section>
+<!--pricing section ends-->
+
+<!--review section starts-->
+<section class="review" id="review">
+    <h1 class="heading">Client's <span>Reviews</span></h1>
+
+    <div class=" swiper-container review-slider">
+        <div class="swiper-wrappeer">
+            <div class="slide">
+                <img src="assets/cus1.jpg" alt="">
+                <h3>Ramesh Santhush</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consequuntur debitis dicta doloribus
+                    error laboriosam non numquam quo similique voluptatem! Commodi iure odit reiciendis. Consequuntur
+                    labore laboriosam non veritatis!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+            </div>
+
+            <div class="slide">
+                <img src="assets/cus2.jpg" alt="">
+                <h3>Dushen Hirusha</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consequuntur debitis dicta doloribus
+                    error laboriosam non numquam quo similique voluptatem! Commodi iure odit reiciendis. Consequuntur
+                    labore laboriosam non veritatis!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+            </div>
+
+            <div class="slide">
+                <img src="assets/cus3jpeg.jpeg" alt="">
+                <h3>Amanda dunishani</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consequuntur debitis dicta doloribus
+                    error laboriosam non numquam quo similique voluptatem! Commodi iure odit reiciendis. Consequuntur
+                    labore laboriosam non veritatis!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+    </div>
+</section>
+<!--review section ends-->
+
+<!--contact section start-->
+<section class="contact" id="contact">
+    <h1 class="heading"><span>Contact</span></h1>
+
+    <div class="inputBox">
+        <input type="text" placeholder="name">
+        <input type="email" placeholder="email">
+    </div>
+
+    <div class="inputBox">
+        <input type="number" placeholder="number">
+        <input type="text" placeholder="subject">
+    </div>
+
+    <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+
+    <input type="submit" value="send message" class="btn">
+</section>
+<!--contact section end-->
+
+<!--blog section start-->
+<section class="blog" id="blog">
+    <h1 class="heading">Our <span>Blogs</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="assets/blog1.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Explore the world now, Adventure awaits</h3>
+                <a href="#" class="btn">read more</a>
+                <div class="icons">
+                    <a href="#"><i class="fas fa-calender"></i>31st Oct 2023</a>
+                    <a href="#"><i class="fas fa-user"></i>by admin</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/blog2.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Explore the world now, Adventure awaits</h3>
+                <a href="#" class="btn">read more</a>
+                <div class="icons">
+                    <a href="#"><i class="fas fa-calender"></i>31st Oct 2023</a>
+                    <a href="#"><i class="fas fa-user"></i>by admin</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/blog3.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Explore the world now, Adventure awaits</h3>
+                <a href="#" class="btn">read more</a>
+                <div class="icons">
+                    <a href="#"><i class="fas fa-calender"></i>31st Oct 2023</a>
+                    <a href="#"><i class="fas fa-user"></i>by admin</a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+<!--blog section end-->
+
+<!--footer section start-->
+<section class="footer" id="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Our Branches</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i>Colombo</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i>Kalutara</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i>Nuwara Eliya</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i>Jaffna</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i>Gampaha</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#"> <i class="fas fa-chevron-right"></i>Home</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>packages</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>services</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>pricing</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>review</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>contact</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>blog</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>footer</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#"> <i class="fas fa-phone"></i>+94 771102436</a>
+            <a href="#"> <i class="fas fa-phone"></i>+94 121233211</a>
+            <a href="#"> <i class="fas fa-envelope"></i>tharukavishmipk24@gmail.com</a>
+            <a href="#"> <i class="fas fa-phone"></i>+94 771102436</a>
+            <a href="#"> <i class="fas fa-phone"></i>+94 771102436</a>
+        </div>
+
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#"> <i class="fas fa-facebook"></i>facebook</a>
+            <a href="#"> <i class="fas fa-twitter"></i>twitter</a>
+            <a href="#"> <i class="fas fa-instagram"></i>instagram</a>
+            <a href="#"> <i class="fas fa-linkedin"></i>linkedin</a>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="credit">Created By <span>Vishmi Tharuka</span> | All Right Reserved.| </div>
+
+
+</section>
+<!--footer section end-->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
