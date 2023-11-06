@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Poppins:wght@500&display=swap');
+
 :root{
     --orange:white;
     --text-color-1:lightseagreen;
@@ -26,6 +28,12 @@ html{
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
 }
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
 
 html::-webkit-scrollbar{
     width: .8rem;
@@ -36,21 +44,12 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-   background: whitesmoke;
+    background: whitesmoke;
 }
 
 body{
-    background: var(--bg-color-2);
+    background:white;
 }
-
-body.active{
-    --orange:yellow;
-    --text-color-1:red;
-    --text-color-2:lightgreen;
-    --bg-color-1:light blue;
-    --bg-color-2:light purple;
-}
-
 section{
     padding: 2rem 7%;
     padding-top: 7%;
@@ -60,7 +59,7 @@ section{
 .heading{
     text-align: center;
     padding-bottom: 2rem;
-    color: white;
+    color: black;
     font-size: 5rem;
 }
 
@@ -97,7 +96,7 @@ section{
 .header{
     position: fixed;
     top: 0; left: 0; right: -4rem;
-    background: var(--bg-color-1);
+    background: darkcyan ;
     box-shadow: var(--box-shadow);
     padding: 1.5rem 5%;
     z-index: 1000;
@@ -108,6 +107,8 @@ section{
 }
 
 .header .logo{
+    font-family: 'Kenia', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight:bolder;
     font-size: 35px;
     color: white;
@@ -115,154 +116,22 @@ section{
 }
 
 .header .logo i{
+    color: #65bfd4;
+}
+
+.header li a{
+    font-size: 2rem;
     color: white;
 }
-
-.header .search-form{
-    background: whitesmoke;
-    border-radius: .7rem;
-    display: flex;
-    align-items: center;
-    height: 4.5rem;
-    width: 50rem;
+.header li i #signin{
+    font-size: 3.5rem;
 }
 
-.header .search-form input{
-    height: 100%;
-    width: 100%;
-    background: none;
-    text-transform: none;
-    font-size: 1.9rem;
-    color: black;
-    padding: 1rem;
-}
-
-.header  .search-form label{
-    font-size: 2rem;
-    margin-right: 1.5rem;
-    color: darkgray;
-    cursor: pointer;
+.header li i #signup{
+    font-size: 4rem;
 
 }
 
-.header  .search-form label:hover{
-    color: var(--orange);
-
-}
-
-.header .icons div{
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    font-size: 2rem;
-    border-radius: .5rem;
-    margin-left: .5rem;
-    background: var(--bg-color-2);
-    color: var(--text-color-1);
-    cursor: pointer;
-    text-align: center;
-}
-
-.header .icons div:hover{
-    color: lightseagreen;
-    background: var(--orange);
-
-}
-
-#search-btn{
-    display: none;
-}
-
-.header .navbar{
-    position: absolute;
-    top: 0; right: .7%;
-    background: var(--bg-color-1);
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    width: 35rem;
-    transform: scale(0);
-    transform-origin: top right;
-
-}
-
-/*.header .navbar .active{
-    transform: scale(1);
-
-}*/
-
-.header .navbar a{
-    display:table;
-    margin: .3rem;
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: beige;
-    border-radius: .5rem;
-    transform: scale(1);
-}
-
-.header.navbar a:hover{
-    color: lightseagreen;
-    background: darkgrey;
-    padding-left: 2rem;
-
-}
-
-.header .login-form{
-    position: absolute;
-    top: 115%; right: 7%;
-    background: var(--bg-color-1);
-    border-radius: .5rem;
-    box-shadow:var(--box-shadow);
-    width: 35rem;
-    padding: 2rem;
-    transform: scale(0);
-    transform-origin: top right;
-
-}
-
-.header .login-form .active{
-    transform: scale(1);
-}
-
-
-.header .login-form .inputBox{
-    margin-bottom: 1rem;
-}
-
-.header .login-form .inputBox span{
-    font-size: 1.7rem;
-    color: var(--text-color-2);
-}
-
-.header .login-form input{
-    font-size: 1.7rem;
-    color: var(--text-color-2);
-    border-radius: .5rem;
-    padding: 1rem;
-    background: var(--bg-color-2);
-    width: 100%;
-    text-transform: none;
-    margin: .5rem 0;
-}
-
-.header .login-form .remember{
-    display: flex;
-    align-items:center;
-    gap: .8rem;
-    padding: .5rem 0 ;
-}
-
-.header .login-form .remember label{
-    color: var(--text-color-2);
-   /* margin-left:-8rem ;*/
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.header .login-form .btn{
-    width: 100%;
-}
 .home{
     display: flex;
     align-items: center;
@@ -273,7 +142,7 @@ section{
 
 .home .image{
     flex:1 1 45rem;
-   margin-top: 7rem;
+    margin-top: 7rem;
 }
 
 .home .image img{
@@ -287,54 +156,15 @@ section{
 }
 
 .home .content h3{
-    color: white;
+    color: darkcyan;
     font-size: 4rem;
 }
 
 .home .content p{
-    color: var(--text-color-2);
+    color: black;
     font-size: 1.7rem;
     line-height: 1.7;
     padding: 1rem 0;
-}
-
-.form-container form{
-    background: var(--bg-color-1);
-    box-shadow: white;
-    border-radius: .5rem;
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-}
-
-.form-container form .inputBox{
-    flex: 1 1 23rem;
-    margin: 1rem;
-}
-
-.form-container form .inputBox span{
-    font-size: 1.7rem;
-    color: var(--text-color-2);
-}
-
-.form-container form .inputBox input{
-    font-size: 1.5rem;
-    color: var(--text-color-1);
-    background: var(--bg-color-2);
-    border-radius: .5rem;
-    margin: .5rem 0;
-    text-transform: none;
-    width: 100%;
-    padding: 1rem;
-
-}
-
-.form-container form .btn{
-    flex: 1 1 10rem;
-    margin-left: 1rem;
-    height: 7rem;
 }
 
 .packages .box-container{
@@ -344,7 +174,7 @@ section{
 }
 
 .packages .box-container .box{
-    background: var(--bg-color-1);
+    background: powderblue;
     border-radius: .5rem;
     box-shadow: lightseagreen;
 }
@@ -404,6 +234,7 @@ section{
     line-height: 1.7;
 }
 
+
 .services .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(30rem,1fr));
@@ -411,7 +242,7 @@ section{
 }
 
 .services .box-container .box{
-    background: var(--bg-color-1);
+    background: powderblue;
     border-radius: .7rem;
     box-shadow: lightseagreen;
     position: relative;
@@ -421,7 +252,7 @@ section{
 .services .box-container .box span{
     position: absolute;
     top: 1rem; right: 2rem;
-    color: whitesmoke;
+    color: slategray;
     font-weight: bolder;
     font-size: 5rem;
 
@@ -433,20 +264,20 @@ section{
     line-height: 6rem;
     text-align: center;
     font-size: 2.6rem;
-    color: white;
+    color: #222222;
     background: lightseagreen;
     border-radius: 50%;
     margin-bottom: .5rem;
 }
 
 .services .box-container .box h3{
-    color: var(--text-color-1);
+    color: darkcyan;
     font-size: 2.4rem;
     padding: .7rem 0;
 }
 
 .services .box-container .box p{
-    color: var(--text-color-2);
+    color: #222222;
     font-size: 1.5rem;
     line-height: 1.8rem;
 }
@@ -458,7 +289,7 @@ section{
 }
 
 .pricing .box-container .box{
-    background: var(--bg-color-1);
+    background: lightblue;
     border-radius: .8rem;
     box-shadow: white;
     padding: 1rem;
@@ -474,39 +305,12 @@ section{
 
 }
 
-.pricing .box-container .box .price{
-    padding-top: 2rem;
-}
-
-.pricing .box-container .box .price{
-    font-size: 2rem;
-    color: #333333;
-}
-
-.pricing .box-container .box .price .amount{
-    font-size: 5rem;
-    color: white;
-    font-weight: bolder;
-}
-
-.pricing .box-container .box ul{
-    padding: .5rem 0;
-    list-style: none;
-}
-
-.pricing .box-container .box ul li{
-    padding: 1rem 0;
-    font-size: 1.6rem;
-    color: black;
-    font-weight: lighter;
-}
-
 .review .review-slider{
     box-shadow: white;
 }
 
 .review .review-slider .slide{
-    background: var(--bg-color-1);
+    background: lightblue;
     border-radius:.5rem;
     text-align: center;
     padding: 3rem;
@@ -543,42 +347,35 @@ section{
 }
 
 .swiper-pagination-bullet-active{
-   background: pink;
+    background: pink;
+}
+.pricing .box-container .box .price{
+    padding-top: 2rem;
 }
 
-.contact form{
-    max-width: 70rem;
-    margin: 0 auto;
-    text-align: center;
+.pricing .box-container .box .price{
+    font-size: 2rem;
+    color: #333333;
 }
 
-.contact form .inputBox{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.pricing .box-container .box .price .amount{
+    font-size: 5rem;
+    color: white;
+    font-weight: bolder;
 }
 
-.contact form textarea,
-.contact form .inputBox input{
-    width: 100%;
-    padding: 1rem;
-    font-size:1.6rem ;
+.pricing .box-container .box ul{
+    padding: .5rem 0;
+    list-style: none;
+}
+
+.pricing .box-container .box ul li{
+    padding: 1rem 0;
+    font-size: 1.6rem;
     color: black;
-    margin: .7rem 0;
-    background: var(--bg-color-1);
-    box-shadow: white;
-    text-transform: none;
-    border-radius: .7rem;
+    font-weight: lighter;
 }
 
-.contact form textarea{
-    height: 20rem;
-    resize: none;
-}
-
-.contact form .inputBox input{
-    width: 49%;
-}
 
 .blog .box-container{
     display: grid;
@@ -587,7 +384,7 @@ section{
 }
 
 .blog .box-container .box{
-    background: var(--bg-color-1);
+    background: powderblue;
     border-radius: .5rem;
     box-shadow: black;
     padding: 2rem;
@@ -635,7 +432,7 @@ section{
 }
 
 .footer{
-    background: var(--bg-color-2);
+    background: darkcyan;
 }
 
 .footer .box-container{
@@ -683,6 +480,10 @@ section{
     color: lightseagreen;
     font-weight: bold;
 }
+
+
+
+
 
 
 
@@ -746,6 +547,82 @@ section{
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
